@@ -1,11 +1,11 @@
 @font-face {
     font-family: valorant;
-    src: url(/bahan/Font/Valorant\ Font.ttf) format('truetype');
+    src: url(../bahan/Font/Valorant\ Font.ttf) format('truetype');
 }
 
 @font-face {
     font-family: titilium;
-    src: url(/bahan/Font/titilium/TitilliumWeb-Regular.ttf) format('truetype');
+    src: url(../bahan/Font/titilium/TitilliumWeb-Regular.ttf) format('truetype');
 }
 
 *{
@@ -159,23 +159,23 @@ body{
 }
 
 #acent_map{
-    background-image: url(/bahan/map/Ascend1.jpg);
+    background-image: url(../bahan/map/Ascend1.jpg);
 }
 
 #bing_map{
-    background-image: url(/bahan/map/Bind.jpg);
+    background-image: url(../bahan/map/Bind.jpg);
 }
 
 #eaven_map{
-    background-image: url(/bahan/map/haven.jpg);
+    background-image: url(../bahan/map/haven.jpg);
 }
 
 #frektur_map{
-    background-image: url(/bahan/map/fracture.jpg);
+    background-image: url(../bahan/map/fracture.jpg);
 }
 
 #esbok_map{
-    background-image: url(/bahan/map/Icebox1.jpg);
+    background-image: url(../bahan/map/Icebox1.jpg);
 }
 
 .opacity_filter{

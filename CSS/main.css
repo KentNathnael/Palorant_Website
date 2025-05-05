@@ -1,11 +1,11 @@
 @font-face {
     font-family: valorant;
-    src: url(/bahan/Font/Valorant\ Font.ttf) format('truetype');
+    src: url(../bahan/Font/Valorant\ Font.ttf) format('truetype');
 }
 
 @font-face {
     font-family: titilium;
-    src: url(/bahan/Font/titilium/TitilliumWeb-Regular.ttf) format('truetype');
+    src: url(../bahan/Font/titilium/TitilliumWeb-Regular.ttf) format('truetype');
 }
 
 *{
