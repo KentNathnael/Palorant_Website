@@ -1,0 +1,400 @@
+@font-face {
+    font-family: valorant;
+    src: url(/bahan/Font/Valorant\ Font.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: titilium;
+    src: url(/bahan/Font/titilium/TitilliumWeb-Regular.ttf) format('truetype');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+nav{
+    width: 100%;
+    height: 10vh;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav-cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.nav-cont ul{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.nav-cont ul li{
+    width: 20%;
+}
+
+.trapezoid{
+    border-bottom: 5rem solid white;
+    border-left: 1.2rem solid transparent;
+    border-right: 1.2rem solid transparent;
+    height: 0;
+    width: 20vh;
+    rotate: 180deg;
+}
+
+.trapezoid:hover{
+    border-bottom: 5rem solid #BB313C;
+    border-left: 1.2rem solid transparent;
+    border-right: 1.2rem solid transparent;
+    height: 0;
+    width: 20vh;
+    rotate: 180deg;
+    transition: 0.5s;
+}
+
+.trapezoid p{
+    color: black;
+    font-family: valorant;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    rotate: 180deg;
+    margin-top: 20%;
+}
+
+.trapezoid:hover p{
+    color: white;
+    animation: 0.5s;
+    animation-name: fade;
+}
+
+
+.btn_nav{
+    color: white;
+    font-family: valorant;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+}
+
+.btn_nav:hover{
+    text-decoration: underline;
+    text-underline-offset: 1vh;
+}
+
+.cont_hamburger{
+    display: none;
+}
+
+.cont_hamburger span{
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    border-radius: 25px;
+}
+
+
+.fl_ctr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: rgb(89, 89, 89);
+}
+
+/* maps section */
+.maps_section{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+    padding-top: 15vh;
+}
+
+.maps_item{
+    width: 80%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background-color: #BB313C;
+    border-radius: 2rem;
+    justify-content: space-between;
+}
+
+.maps_desc{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2rem;
+    justify-content: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    gap: 2rem;
+}
+
+#acent_map{
+    background-image: url(/bahan/map/Ascend1.jpg);
+}
+
+#bing_map{
+    background-image: url(/bahan/map/Bind.jpg);
+}
+
+#eaven_map{
+    background-image: url(/bahan/map/haven.jpg);
+}
+
+#frektur_map{
+    background-image: url(/bahan/map/fracture.jpg);
+}
+
+#esbok_map{
+    background-image: url(/bahan/map/Icebox1.jpg);
+}
+
+.opacity_filter{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.maps_desc h2{
+    z-index: 1;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-transform: uppercase;
+    font-family: valorant;
+}
+
+.maps_desc p{
+    z-index: 1;
+    width: 80%;
+    font-family: titilium;
+    text-align: justify;
+}
+
+.maps_layout{
+    width: 35%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.maps_layout img{
+    width: 100%;
+}
+
+/* footer */
+footer{
+    background-color: #1f1f1f; 
+    color: white; 
+    padding: 2rem 1rem; 
+    text-align: center;
+    margin-top: 10vh;
+}
+
+footer div{
+    margin-bottom: 1rem;
+}
+
+footer div h1{
+    margin: 0; 
+    font-size: 1.5rem; 
+    font-family: valorant;
+}
+
+footer div img{
+    height: 30px; 
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    /* Navbar */
+    #menu{
+        background-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.75));
+        position: absolute;
+        top: -50vh;
+        justify-content: center;
+        gap: 2rem;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @keyframes slide-in {
+        from{
+            top: -50vh;
+        }
+        to{
+            top: 10vh;
+        }
+    }
+
+    @keyframes slide-out {
+        from{
+            top: 10vh;
+        }
+        to{
+            top: -50vh;
+        }
+        
+    }
+
+    .BestAgent_Left{
+        width: 55%;
+        height: auto;
+    }
+
+    .BestAgent_Container{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 5vh
+    }
+
+    .active{
+        animation: slide-out 0.3s both;
+    }
+
+    .inactive{
+        animation: slide-in 0.3s both;
+    }
+
+    #menu li{
+        width: 100%;
+    }
+
+    #menu li a{
+        height: 40px;
+        width: 200px;
+    }
+    
+    .trapezoid{
+        border-color: transparent;
+        border: none;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .trapezoid:hover{
+        all: unset;
+        rotate: 180deg;
+    }
+
+    .trapezoid p{
+        color: white;
+        position: static;
+        margin: 0;
+    }
+
+    .cont_hamburger{
+        display: flex;
+        flex-direction: column;
+        width: 40px;
+        height: 30px;
+        justify-content: space-between;
+    }
+    
+    /* Footer */
+    footer{
+        background-color: #1f1f1f; 
+        color: white; 
+        padding: 2rem 1rem; 
+        text-align: center;
+    }
+    
+    footer div{
+        margin-bottom: 1rem;
+    }
+    
+    footer div h1{
+        margin: 0; 
+        font-size: 1rem; 
+        font-family: valorant;
+    }
+    
+    footer div img{
+        height: 25px; 
+        margin-right: 0.5rem;
+    }
+
+    footer div small{
+        font-size: 0.8rem; 
+        
+    }
+
+    /* section map */
+    .maps_item{
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .maps_desc{
+        width: 100%;
+        height: 100%;
+        padding: 3rem 0;
+    }
+
+    .maps_item{
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .maps_layout{
+        width: 100%;
+        height: auto;
+    }
+
+    .maps_desc h2{
+        z-index: 1;
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+        text-transform: uppercase;
+        font-family: valorant;
+        font-size: 1.5rem;
+    }
+    
+    .maps_desc p{
+        z-index: 1;
+        width: 80%;
+        font-family: titilium;
+        text-align: justify;
+        font-size: 0.8rem;
+    }
+}
+

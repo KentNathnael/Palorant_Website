@@ -1,0 +1,571 @@
+@font-face {
+    font-family: valorant;
+    src: url(/bahan/Font/Valorant\ Font.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: titilium;
+    src: url(/bahan/Font/titilium/TitilliumWeb-Regular.ttf) format('truetype');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+nav{
+    width: 100%;
+    height: 10vh;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav-cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.nav-cont ul{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.nav-cont ul li{
+    width: 20%;
+}
+
+.trapezoid{
+    border-bottom: 5rem solid white;
+    border-left: 1.2rem solid transparent;
+    border-right: 1.2rem solid transparent;
+    height: 0;
+    width: 20vh;
+    rotate: 180deg;
+    transition: 0.5s ease-in-out;
+}
+
+.trapezoid:hover{
+    border-bottom: 5rem solid #BB313C;
+    border-left: 1.2rem solid transparent;
+    border-right: 1.2rem solid transparent;
+    height: 0;
+    width: 20vh;
+    rotate: 180deg;
+    transition: 0.5s ease-in-out;
+}
+
+.trapezoid p{
+    color: black;
+    font-family: valorant;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    rotate: 180deg;
+    margin-top: 20%;
+}
+
+.trapezoid:hover p{
+    color: white;
+    animation: 0.5s;
+    animation-name: fade;
+}
+
+
+.btn_nav{
+    color: white;
+    font-family: valorant;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+}
+
+.btn_nav:hover{
+    text-decoration: underline;
+    text-underline-offset: 1vh;
+}
+
+.cont_hamburger{
+    display: none;
+}
+
+.cont_hamburger span{
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    border-radius: 25px;
+}
+
+
+.fl_ctr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* news section */
+
+.headline_news{
+    background-color: #570000; 
+    width: 100%;
+    height: 60vh;   
+    display: flex;
+    gap: 2rem 1rem;
+    padding: 15vh 0 2rem 0;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.news_img{
+    width: 60%;
+    height: 100%;
+    /* border: 2px black solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.separator{
+    width: 100%;
+    height: 5px;
+    background-color: #BB313C;
+}
+
+.img_wrapper{
+    position: relative;
+    width: auto;
+    height: 80%;
+    overflow: hidden;
+}
+
+.news_desc{ 
+    display: flex;
+    width: 30%;
+    height: 90%;
+    flex-direction: column;
+    background-color: white;
+    bottom: 0;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    /* border: black 5px solid; */
+}
+
+.news_look{
+    width: auto;
+    height: 80%;
+    background-color: white;
+    padding: 1.5rem;
+    /* border: 5px solid black; */
+}
+
+.logo{
+    width: 7vh;
+    height: 7vh;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2rem;
+}
+
+.headline_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+}
+
+.headline_title h1{
+    background-color: #BB313C;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: valorant;
+    color: white;
+    word-spacing: 10px;
+}
+
+.news_text{
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 0;
+}
+
+.news_text h2{
+    font-family: valorant;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 70%;
+}
+
+.news_text p{
+    font-family: titilium;
+    width: 70%;
+    font-size: 1.2rem;
+    text-align: justify;
+    color: #BB313C;
+    background-color: white;
+    padding: 1rem 2rem;
+}
+
+/* other section */
+
+.other_news{
+    width: 100%;
+    height: 70vh;
+    background-color: #BB313C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.other_container{
+    width: 30%;
+    /* border: black 2px solid; */
+    height: 100%;
+    /* padding: 0 0 0 1rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.otherImg_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.otherDesc_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.other_img{
+    width: 80%;
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.other_desc{
+    width: 80%;
+    background-color: white;
+    padding: 1rem;
+}
+.other_container h2{
+    font-family: valorant;
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.other_container hr{
+    width: 100%;
+    height: 5px;
+    background-color: #BB313C;
+}
+
+.other_desc p{
+    font-family: titilium;
+    padding: 1rem 0;
+    width: 95%;
+    text-align: justify;
+}
+
+/* footer */
+footer{
+    background-color: #1f1f1f; 
+    color: white; 
+    padding: 2rem 1rem; 
+    text-align: center;
+}
+
+footer div{
+    margin-bottom: 1rem;
+}
+
+footer div h1{
+    margin: 0; 
+    font-size: 1.5rem; 
+    font-family: valorant;
+}
+
+footer div img{
+    height: 30px; 
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    /* Navbar */
+    #menu{
+        background-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.75));
+        position: absolute;
+        top: -50vh;
+        justify-content: center;
+        gap: 2rem;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @keyframes slide-in {
+        from{
+            top: -50vh;
+        }
+        to{
+            top: 10vh;
+        }
+    }
+
+    @keyframes slide-out {
+        from{
+            top: 10vh;
+        }
+        to{
+            top: -50vh;
+        }
+        
+    }
+
+    .BestAgent_Left{
+        width: 55%;
+        height: auto;
+    }
+
+    .BestAgent_Container{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 5vh
+    }
+
+    .active{
+        animation: slide-out 0.3s both;
+    }
+
+    .inactive{
+        animation: slide-in 0.3s both;
+    }
+
+    #menu li{
+        width: 100%;
+    }
+
+    #menu li a{
+        height: 40px;
+        width: 200px;
+    }
+    
+    .trapezoid{
+        border-color: transparent;
+        border: none;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .trapezoid:hover{
+        all: unset;
+        rotate: 180deg;
+    }
+
+
+    .trapezoid p{
+        color: white;
+        position: static;
+        margin: 0;
+    }
+
+    .cont_hamburger{
+        display: flex;
+        flex-direction: column;
+        width: 40px;
+        height: 30px;
+        justify-content: space-between;
+    }
+    
+    /* Footer */
+    footer{
+        background-color: #1f1f1f; 
+        color: white; 
+        padding: 2rem 1rem; 
+        text-align: center;
+    }
+    
+    footer div{
+        margin-bottom: 1rem;
+    }
+    
+    footer div h1{
+        margin: 0; 
+        font-size: 1rem; 
+        font-family: valorant;
+    }
+    
+    footer div img{
+        height: 25px; 
+        margin-right: 0.5rem;
+    }
+
+    footer div small{
+        font-size: 0.8rem; 
+        
+    }
+
+    .headline_news{
+       flex-direction: column;
+    }
+
+
+    .news_img{
+        width: 90%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img_wrapper{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .news_look{
+        height: 80%;
+        padding: 1.5rem;
+        justify-self: center;
+        align-items: center;;
+    }
+
+    .logo{
+        display: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        width: 7vh;
+        height: 7vh;
+        opacity: 0.5;
+    }
+
+    .news_desc{
+        width: 90%;
+        height: 50%;
+    }
+
+    .headline_title{
+        height: 3rem;
+    }
+    
+    .headline_title h1{
+        background-color: #BB313C;
+        padding: 0.5rem 1rem;
+        font-size: 15px;
+        word-spacing: 5px;
+    }
+    
+    .news_text h2{
+        font-family: valorant;
+        font-size: 15px;
+        margin-bottom: 0.5rem;
+        width: 100%;
+    }
+    
+    .news_text p{
+        font-family: titilium;
+        width: 70%;
+        font-size: 12.5px;
+        text-align: justify;
+        color: #BB313C;
+        background-color: transparent;
+        padding: 0;
+        text-align: center;
+    }
+    
+    /* other section */
+    .other_news{
+        flex-direction: column;
+        height: auto;
+        gap: 1rem 0;
+    }
+
+    .other_container{
+        flex-direction: row;
+        width: 100%;
+        height: 30vh;
+    }
+
+    .otherDesc_wrapper{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .other_desc{
+        width: 80%;
+        padding: 1rem 0.5rem;
+    }
+
+    .other_desc h2{
+        margin: 0;
+        font-size: 1rem;
+    }
+
+
+    .other_desc p{
+        padding: 0;
+        font-size: 0.8rem;
+    }
+
+    .otherImg_wrapper{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .other_img{
+        width: 80%;
+        padding: 0.5rem 0.5rem;
+        margin: 0;
+        background-color: white;
+    }
+}
+

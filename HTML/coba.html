@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="coba.css">
+</head>
+<body>
+    <!-- Nav bar -->
+    <nav class="fl_ctr">
+        <div class="nav-cont">
+            <!-- Desktop -->
+            <ul id="menu">
+                <li class="fl_ctr">
+                    <a href="Agent.html" class="btn_nav" >Agent</a>
+                </li>
+                <li class="fl_ctr">
+                    <a href="maps.html" class="btn_nav" >Maps</a>
+                </li>
+                <li class="fl_ctr">
+                    <a href="main.html" class="btn_nav">
+                        <div class="trapezoid">
+                                <p>Home</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="fl_ctr">
+                    <a href="News.html" class="btn_nav" >News</a>
+                </li>
+                <li class="fl_ctr">
+                    <a href="report.html" class="btn_nav" >Report</a>
+                </li>
+            </ul>
+            <!-- Mobile -->
+            <div class="cont_hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="form_container">
+        <form class="form_report" id="form_report">
+            <h1 class="fl_ctr">REPORT</h1>
+            <input type="text" placeholder="USERNAME" id="inputUser"/>
+            <input type="email" placeholder="EMAIL" id="inputEmail"/>
+            <select class="input_server" id="selectServer">
+              <option value="">SERVER</option>
+              <option value="Asia">Asia</option>
+              <option value="Europe">Europe</option>
+              <option value="NA">NA</option>
+            </select>
+            <textarea placeholder="TYPE YOUR DESCRIPTION HERE" id="inputDesc"></textarea>
+        
+            <label class="checkbox-item">
+                <input type="checkbox" id="checkbox"/>
+                <span class="text gray">
+                    BY CLICKING HERE, I STATE THAT I GAVE PERMISSION TO RECEIVING FOLLOW UP EMAIL
+                </span>
+            </label>
+            
+            <button type="submit" class="submit-btn">SUBMIT</button>
+        </form>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div>
+          <h1>Palorant</h1>
+        </div>
+        <div>
+          <img src="/bahan/Footer/instagramWhite.png">
+          <img src="/bahan/Footer/YoutubeWhite.png">
+        </div>
+        <div>
+          <small>&copy; 2025 Palorant. All rights reserved.</small>
+        </div>
+      </footer>
+    </body>
+    <script src="hamburger.js"></script>
+    </html>
